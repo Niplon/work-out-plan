@@ -4,6 +4,8 @@ A 12-week plank training app in a single self-contained file: `index.html`. No b
 
 Deployed as a static site on Vercel (https://work-out-plan.vercel.app/), which redeploys automatically on every push to `main`. The file must stay named `index.html` so it's served at `/`.
 
+Icons: `favicon.svg` is the source design (accent `#2450c9`, timer ring, plank figure). `favicon.ico` (16 + 32 px) and `apple-touch-icon.png` (180 px, square, no rounded corners) are rendered from it; regenerate both if the SVG changes.
+
 ## Program logic
 
 - Day-1 test times the best clean hold for front plank, side plank left, side plank right.
