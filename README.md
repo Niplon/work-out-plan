@@ -6,7 +6,9 @@ A 12-week plank program in a single HTML file. Take a test on day 1, and the app
 
 ## Getting started
 
-Download `Plank Plan.html` and open it in a browser. Nothing to install, no account needed. It's built for phones but works on any screen.
+Open **https://work-out-plan.vercel.app/** on your phone. Nothing to install, no account needed. It's built for phones but works on any screen.
+
+You can also download `index.html` and open it straight from your computer.
 
 Your progress is saved in the browser on that device (`localStorage`), so use the same browser each time.
 
@@ -39,4 +41,4 @@ The plan uses **forearm planks only**, with hands open and relaxed. It was built
 
 ## Development
 
-All the HTML, CSS and JavaScript lives in `Plank Plan.html`, with no build step or framework. See [CLAUDE.md](CLAUDE.md) for how the code is organized.
+All the HTML, CSS and JavaScript lives in `index.html`, with no build step or framework. Pushing to `main` redeploys the site on Vercel. See [CLAUDE.md](CLAUDE.md) for how the code is organized.

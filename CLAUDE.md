@@ -1,6 +1,8 @@
 # Plank Plan
 
-A 12-week plank training app in a single self-contained file: `Plank Plan.html`. No build step, no framework, no dependencies besides Google Fonts (Barlow / Barlow Condensed). Open the file in a browser to run it.
+A 12-week plank training app in a single self-contained file: `index.html`. No build step, no framework, no dependencies besides Google Fonts (Barlow / Barlow Condensed). Open the file in a browser to run it.
+
+Deployed as a static site on Vercel (https://work-out-plan.vercel.app/), which redeploys automatically on every push to `main`. The file must stay named `index.html` so it's served at `/`.
 
 ## Program logic
 
