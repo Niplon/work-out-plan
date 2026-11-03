@@ -4,7 +4,12 @@ A 12-week plank training app in a single self-contained file: `index.html`. No b
 
 Deployed as a static site on Vercel (https://work-out-plan.vercel.app/), which redeploys automatically on every push to `main`. The file must stay named `index.html` so it's served at `/`.
 
-Icons: `favicon.svg` is the source design (accent `#2450c9`, timer ring, plank figure). `favicon.ico` (16 + 32 px) and `apple-touch-icon.png` (180 px, square, no rounded corners) are rendered from it; regenerate both if the SVG changes.
+## PWA and icons
+
+- `manifest.webmanifest` makes it installable (standalone, portrait). `index.html` links it and carries the iOS `apple-mobile-web-app-*` meta tags.
+- `sw.js` precaches the app shell and icons, then serves same-origin files and Google Fonts stale-while-revalidate. Navigations resolve to the cached `/`, so the app opens offline and a new deploy shows up on the next open. Bump `CACHE` whenever the `PRECACHE` list changes.
+- Registration is at the end of the script and runs only over http(s), so opening the file locally or as an artifact skips it.
+- `favicon.svg` is the source design (accent `#2450c9`, timer ring, plank figure). All raster icons are rendered from it: `favicon.ico` (16 + 32 px), `apple-touch-icon.png` (180 px, square, no rounded corners), `icon-192.png`, `icon-512.png`, and `icon-maskable-512.png` (full-bleed, content scaled to 78% for the safe zone). Regenerate them all if the SVG changes.
 
 ## Program logic
 

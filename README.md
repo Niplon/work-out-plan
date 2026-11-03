@@ -10,6 +10,13 @@ Open **https://work-out-plan.vercel.app/** on your phone. Nothing to install, no
 
 You can also download `index.html` and open it straight from your computer.
 
+### Install on your phone
+
+- **iPhone (Safari):** tap Share → **Add to Home Screen**.
+- **Android (Chrome):** tap the menu → **Install app**.
+
+Once installed it opens full-screen like a native app. It works offline after your first visit, so a weak signal at the gym won't stop the timer.
+
 Your progress is saved in the browser on that device (`localStorage`), so use the same browser each time.
 
 ## How it works
